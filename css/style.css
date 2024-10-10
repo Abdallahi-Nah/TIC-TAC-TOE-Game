@@ -1,0 +1,43 @@
+body {
+    font-family: "Akaya Kanadaka", system-ui;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+    height: 50vh;
+}
+.content {
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 100%;
+    margin: 12% auto 0%;
+}
+#turn {
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    border-radius: 25px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+}
+#turn:hover {
+    background-color: rgba(221, 221, 221, .7);
+}
+.game {
+    width: 100%;
+    height: calc(100% - 18%);
+    /* border: 1px solid #ddd; */
+}
+.game > .row {
+    height: 100% !important;
+    background-color: rgba(255, 217, 0, 0.915);
+}
+.game > .row > .col {
+    height: calc(100% / 3) !important;
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+}
+.game > .row > .col:hover {
+    background-color: #ddd;
+}
